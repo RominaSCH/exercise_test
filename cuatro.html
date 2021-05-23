@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question 1</title>
+    <title>Question 4</title>
     <link rel="stylesheet" href="question.css">
 </head>
 <body>
@@ -15,12 +15,28 @@
         <div class="question_bottom">
             <div class="question-title">나는 혼자서도 잘한다?</div>
             <div class="question-answers">
-                <a href="cinco.html" class="answer">잘 못한다. 누가 시켜야만 한다.</a>
-                <a href="cinco.html" class="answer">계획만 짜여져 있으면 할 자신 있다.</a>
-                <a href="cinco.html" class="answer">스스로 계획은 짤 수 있지만 잘 안하게 된다.</a>
-                <a href="cinco.html" class="answer">스스로 계획부터 실행까지 가능하다.</a>
+                <div class="answer willDown">잘 못한다. 누가 시켜야만 하는 스타일</div>
+                <div class="answer willUp">계획만 짜여져 있으면 잘 할 자신 있다</div>
+                <div class="answer willDown">스스로 계획은 잘 짜는데 잘 안하게 된다</div>
+                <div class="answer willUp">스스로 계획부터 실행까지 가능하다</div>
             </div>
         </div>
     </div>
+    <script>
+        temp = location.href.split("?");
+        let scores = temp[1].split(",");
+        scores.map( (element, index) => {
+            scores[index] = parseInt(element);
+        });
+        console.log(scores);
+        document.querySelector(".willUp").addEventListener("click", () => {
+            scores[0] += 1;
+            location.href = "cinco.html" + "?" + scores;
+        });
+        document.querySelector(".willDown").addEventListener("click", () => {
+            scores[0] -= 1;
+            location.href = "cinco.html" + "?" + scores;
+        });
+    </script>
 </body>
 </html>

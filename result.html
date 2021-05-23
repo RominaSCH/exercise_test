@@ -18,5 +18,14 @@
         </div>
         <div class="share">share link</div>
     </div>
+    <script>
+        temp = location.href.split("?");
+        let scores = temp[1].split(",");
+        scores.map( (element, index) => {
+            scores[index] = parseInt(element);
+        });
+        document.querySelector(".result-text").innerHTML = scores;
+        
+    </script>
 </body>
 </html>

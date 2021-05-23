@@ -15,11 +15,33 @@
         <div class="question_bottom">
             <div class="question-title">근처에 같이 운동할 파트너가 있다?</div>
             <div class="question-answers">
-                <a href="siete.html" class="answer">있다.</a>
-                <a href="siete.html" class="answer">없다.</a>
-                <a href="siete.html" class="answer">당장은 없지만 만들어보겠다.</a>
+                <div class="answer meetUp">있다</div>
+                <div class="answer meetDown">없다</div>
+                <div class="answer willUp">당장은 없지만 만들어보겠다.</div>
             </div>
         </div>
     </div>
+    <script>
+        temp = location.href.split("?");
+        let scores = temp[1].split(",");
+        scores.map( (element, index) => {
+            scores[index] = parseInt(element);
+        });
+        document.querySelector(".meetUp").addEventListener("click", () => {
+            scores[1] += 1;
+            location.href = "siete.html" + "?" + scores;
+        });
+        document.querySelector(".meetDown").addEventListener("click", () => {
+            scores[1] -= 1;
+            location.href = "siete.html" + "?" + scores;
+        });
+        document.querySelector(".willUp").addEventListener("click", () => {
+            scores[0] += 1;
+            location.href = "siete.html" + "?" + scores;
+        });
+        document.querySelector(".answer").addEventListener("click", () => {
+            location.href = "siete.html" + "?" + scores;
+        })
+    </script>
 </body>
 </html>

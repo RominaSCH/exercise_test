@@ -15,11 +15,29 @@
         <div class="question_bottom">
             <div class="question-title">실내? 실외?</div>
             <div class="question-answers">
-                <a href="result.html" class="answer inside">집밖은 귀찮아, 실내가 좋다</a>
-                <a href="result.html" class="answer outside">날씨에 따라 고르고 싶다.</a>
-                <a href="result.html" class="answer outside">안은 너무 답답해! 바깥으로 나가고 싶다.</a>
+                <div class="answer inside">실내</div>
+                <div class="answer outside">실외</div>
+                <div class="answer">날씨에 따라 다르다</div>
             </div>
         </div>
     </div>
+    <script>
+        temp = location.href.split("?");
+        let scores = temp[1].split(",");
+        scores.map( (element, index) => {
+            scores[index] = parseInt(element);
+        });
+        document.querySelector(".inside").addEventListener("click", () => {
+            scores[2] -= 1;
+            location.href = "result.html" + "?" + scores;
+        });
+        document.querySelector(".outside").addEventListener("click", () => {
+            scores[2] += 1;
+            location.href = "result.html" + "?" + scores;
+        });
+        document.querySelector(".answer").addEventListener("click", () => {
+            location.href = "result.html" + "?" + scores;
+        })
+    </script>
 </body>
 </html>

@@ -15,12 +15,26 @@
         <div class="question_bottom">
             <div class="question-title">운동을 하는 목적이 뭐에요?</div>
             <div class="question-answers">
-                <a href="tres.html" class="answer">건강을 위해서</a>
-                <a href="tres.html" class="answer">몸을 교정하고 싶어요</a>
-                <a href="tres.html" class="answer">다이어트를 하고 싶어요</a>
-                <a href="tres.html" class="answer">멋진 몸을 만들고 싶어요</a>
+                <div class="answer">건강을 위해서</div>
+                <div class="answer correct">몸을 교정하고 싶어요</div>
+                <div class="answer">다이어트를 하고 싶어요</div>
+                <div class="answer">멋진 몸을 만들고 싶어요</div>
             </div>
         </div>
     </div>
+    <script>
+        temp = location.href.split("?");
+        let scores = temp[1].split(",");
+        scores.map( (element, index) => {
+            scores[index] = parseInt(element);
+        });
+        document.querySelector(".correct").addEventListener("click", () => {
+            scores[4] += 1;
+            location.href = "tres.html" + "?" + scores;
+        });
+        document.querySelector(".answer").addEventListener("click", () => {
+            location.href = "tres.html" + "?" + scores;
+        })
+    </script>
 </body>
 </html>
