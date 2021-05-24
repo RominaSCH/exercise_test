@@ -15,11 +15,11 @@
         <div class="question_bottom">
             <div class="question-title">놀이공원에서 뭘 가장 좋아하나요?</div>
             <div class="question-answers">
-                <div class="answer meetUp">퍼레이드가 최고!</div>
-                <div class="answer extreme">짜릿한 자이로드롭, 롤러코스터, 바이킹!</div>
-                <div class="answer">여유롭고 낭만있는 관람차</div>
-                <div class="answer">걸어다니며 이것저것 구경하는 게 좋다</div>
-                <div class="answer meetUp">사랑하는 사람과 보낸다면 무엇이든 좋다</div>
+                <div class="answer" onclick="meetUp()">퍼레이드가 최고!</div>
+                <div class="answer" onclick="outside()">짜릿한 자이로드롭, 롤러코스터, 바이킹!</div>
+                <div class="answer" onclick="inside()">여유롭고 낭만있는 관람차</div>
+                <div class="answer" onclick="outside()">걸어다니며 이것저것 구경하는 게 좋다</div>
+                <div class="answer" onclick="meetUp()">사랑하는 사람과 보낸다면 무엇이든 좋다</div>
             </div>
         </div>
     </div>
@@ -29,17 +29,18 @@
         scores.map( (element, index) => {
             scores[index] = parseInt(element);
         });
-        document.querySelector(".meetUp").addEventListener("click", () => {
+        function meetUp(){
             scores[1] += 1;
             location.href = "nueve.html" + "?" + scores;
-        });
-        document.querySelector(".extreme").addEventListener("click", () => {
-            scores[6] += 1;
+        }
+        function outside(){
+            scores[2] += 1;
             location.href = "nueve.html" + "?" + scores;
-        });
-        document.querySelector(".answer").addEventListener("click", () => {
+        }
+        function inside(){
+            scores[2] -= 1;
             location.href = "nueve.html" + "?" + scores;
-        })
+        }
     </script>
 </body>
 </html>

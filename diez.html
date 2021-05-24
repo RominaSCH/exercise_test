@@ -15,9 +15,9 @@
         <div class="question_bottom">
             <div class="question-title">실내? 실외?</div>
             <div class="question-answers">
-                <div class="answer inside">실내</div>
-                <div class="answer outside">실외</div>
-                <div class="answer">날씨에 따라 다르다</div>
+                <div class="answer" onclick="inside()">실내</div>
+                <div class="answer" onclick="outside()">실외</div>
+                <div class="answer" onclick="answer()">날씨에 따라 다르다</div>
             </div>
         </div>
     </div>
@@ -27,17 +27,17 @@
         scores.map( (element, index) => {
             scores[index] = parseInt(element);
         });
-        document.querySelector(".inside").addEventListener("click", () => {
+        function inside(){
             scores[2] -= 1;
             location.href = "result.html" + "?" + scores;
-        });
-        document.querySelector(".outside").addEventListener("click", () => {
+        }
+        function outside(){
             scores[2] += 1;
             location.href = "result.html" + "?" + scores;
-        });
-        document.querySelector(".answer").addEventListener("click", () => {
+        }
+        function answer(){
             location.href = "result.html" + "?" + scores;
-        })
+        }
     </script>
 </body>
 </html>

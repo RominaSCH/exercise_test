@@ -15,31 +15,27 @@
         <div class="question_bottom">
             <div class="question-title">나에게 있어 가장 중요한 것은?</div>
             <div class="question-answers">
-                <div class="answer">돈</div>
-                <div class="answer willUp">건강</div>
-                <div class="answer meetUp">사람</div>
-                <div class="answer">나</div>
-                <!-- <a href="dos.html" class="answer">돈</a>
-                <a href="dos.html" class="answer willUp">아프면 다 소용없어, 건강이 최고야</a>
-                <a href="dos.html" class="answer meetUp">가족, 지인, 애인, 친구, 반려동물</a>
-                <a href="dos.html" class="answer">내가 제일 중요해!</a> -->
+                <div class="answer" onclick="answer()">돈</div>
+                <div class="answer" onclick="willUP()">건강</div>
+                <div class="answer" onclick="meetUp()">사람</div>
             </div>
         </div>
     </div>
 
     <script>
-        let scores = [ 0, 0, 0, 0, 0, 0, 0];
-        document.querySelector(".willUp").addEventListener("click", () => {
+        let scores = [ 0, 0, 0, 0, 0, 0];
+
+        function willUP(){
             scores[0] += 1;
             location.href = "dos.html" + "?" + scores;
-        });
-        document.querySelector(".meetUp").addEventListener("click", () => {
+        }
+        function meetUp(){
             scores[1] += 1;
             location.href = "dos.html" + "?" + scores;
-        });
-        document.querySelector(".answer").addEventListener("click", () => {
+        }
+        function answer(){
             location.href = "dos.html" + "?" + scores;
-        })
+        }
     </script>
 </body>
 </html>

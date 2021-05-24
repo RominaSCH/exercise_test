@@ -15,30 +15,29 @@
         <div class="question_bottom">
             <div class="question-title">운동에 시간을 얼마나 투자할 수 있나요?</div>
             <div class="question-answers">
-                <div class="answer timeDown">일주일에 2번 1시간정도 할애할 수 있다</div>
-                <div class="answer">일주일에 3번 1시간정도 할애할 수 있다</div>
-                <div class="answer timeUp">일주일에 3번 이상 2시간 넘게 할애할 수 있다</div>
+                <div class="answer" onclick="timeDown()">일주일에 2번 1시간정도 할애할 수 있다</div>
+                <div class="answer" onclick="answer()">일주일에 3번 1시간정도 할애할 수 있다</div>
+                <div class="answer" onclick="timeUp()">일주일에 3번 이상 2시간 넘게 할애할 수 있다</div>
             </div>
         </div>
     </div>
     <script>
-        //왜 가끔 선택이 안되는그야?
         temp = location.href.split("?");
         let scores = temp[1].split(",");
         scores.map( (element, index) => {
             scores[index] = parseInt(element);
         });
-        document.querySelector(".timeDown").addEventListener("click", () => {
+        function timeDown(){
             scores[5] -= 1;
             location.href = "ocho.html" + "?" + scores;
-        });
-        document.querySelector(".timeUp").addEventListener("click", () => {
+        }
+        function timeUp(){
             scores[5] += 1;
             location.href = "ocho.html" + "?" + scores;
-        });
-        document.querySelector(".answer").addEventListener("click", () => {
+        }
+        function answer(){
             location.href = "ocho.html" + "?" + scores;
-        })
+        }
     </script>
 </body>
 </html>

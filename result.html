@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,20 @@
     <title>Result</title>
     <link rel="stylesheet" href="result.css">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="result">
-            <img src="#"/>
+            <div class="result-first">당신에게 추천하는 운동은?</div>
+            <img id="result-img" src="#" />
         </div>
         <div class="result">
             <div class="result-title">result-title</div>
             <div class="result-text">Your exercise type result~~</div>
         </div>
-        <div class="share">share link</div>
+        <!-- <div class="share">share link</div> -->
     </div>
-    <script>
-        temp = location.href.split("?");
-        let scores = temp[1].split(",");
-        scores.map( (element, index) => {
-            scores[index] = parseInt(element);
-        });
-        document.querySelector(".result-text").innerHTML = scores;
-        
-    </script>
+    <script src="result.js"></script>
 </body>
+
 </html>

@@ -15,10 +15,10 @@
         <div class="question_bottom">
             <div class="question-title">난 몸치다? 아니다?</div>
             <div class="question-answers">
-                <div class="answer">몸치다</div>
-                <div class="answer">평범하다</div>
-                <div class="answer willUp">몸치지만 노력한다면 극복할 수 있다고 생각한다</div>
-                <div class="answer extreme">몸쓰는 건 자신있다</div>
+                <div class="answer" onclick="answer()">몸치다</div>
+                <div class="answer" onclick="answer()">평범하다</div>
+                <div class="answer" onclick="willUp()">몸치지만 노력한다면 극복할 수 있다고 생각한다</div>
+                <div class="answer" onclick="outside()">몸쓰는 건 자신있다</div>
             </div>
         </div>
     </div>
@@ -28,17 +28,17 @@
         scores.map( (element, index) => {
             scores[index] = parseInt(element);
         });
-        document.querySelector(".willUp").addEventListener("click", () => {
+        function willUp(){
             scores[0] += 1;
             location.href = "diez.html" + "?" + scores;
-        });
-        document.querySelector(".extreme").addEventListener("click", () => {
-            scores[6] += 1;
+        }
+        function outside(){
+            scores[2] += 1;
             location.href = "diez.html" + "?" + scores;
-        });
-        document.querySelector(".answer").addEventListener("click", () => {
+        }
+        function answer(){
             location.href = "diez.html" + "?" + scores;
-        })
+        }
     </script>
 </body>
 </html>

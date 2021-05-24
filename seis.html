@@ -15,9 +15,9 @@
         <div class="question_bottom">
             <div class="question-title">근처에 같이 운동할 파트너가 있다?</div>
             <div class="question-answers">
-                <div class="answer meetUp">있다</div>
-                <div class="answer meetDown">없다</div>
-                <div class="answer willUp">당장은 없지만 만들어보겠다.</div>
+                <div class="answer" onclick="meetUp()">있다</div>
+                <div class="answer" onclick="meetDown()">없다</div>
+                <div class="answer" onclick="willUp()">당장은 없지만 만들어보겠다.</div>
             </div>
         </div>
     </div>
@@ -27,21 +27,22 @@
         scores.map( (element, index) => {
             scores[index] = parseInt(element);
         });
-        document.querySelector(".meetUp").addEventListener("click", () => {
+
+        function meetUp(){
             scores[1] += 1;
             location.href = "siete.html" + "?" + scores;
-        });
-        document.querySelector(".meetDown").addEventListener("click", () => {
+        }
+        function meetDown(){
             scores[1] -= 1;
             location.href = "siete.html" + "?" + scores;
-        });
-        document.querySelector(".willUp").addEventListener("click", () => {
+        }
+        function willUp(){
             scores[0] += 1;
             location.href = "siete.html" + "?" + scores;
-        });
-        document.querySelector(".answer").addEventListener("click", () => {
+        }
+        function answer(){
             location.href = "siete.html" + "?" + scores;
-        })
+        }
     </script>
 </body>
 </html>

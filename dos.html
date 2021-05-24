@@ -15,10 +15,10 @@
         <div class="question_bottom">
             <div class="question-title">운동을 하는 목적이 뭐에요?</div>
             <div class="question-answers">
-                <div class="answer">건강을 위해서</div>
-                <div class="answer correct">몸을 교정하고 싶어요</div>
-                <div class="answer">다이어트를 하고 싶어요</div>
-                <div class="answer">멋진 몸을 만들고 싶어요</div>
+                <div class="answer" onclick="answer()">건강을 위해서</div>
+                <div class="answer" onclick="correct()">몸을 교정하고 싶어요</div>
+                <div class="answer" onclick="answer()">다이어트를 하고 싶어요</div>
+                <div class="answer" onclick="answer()">멋진 몸을 만들고 싶어요</div>
             </div>
         </div>
     </div>
@@ -28,13 +28,14 @@
         scores.map( (element, index) => {
             scores[index] = parseInt(element);
         });
-        document.querySelector(".correct").addEventListener("click", () => {
+
+        function correct(){
             scores[4] += 1;
             location.href = "tres.html" + "?" + scores;
-        });
-        document.querySelector(".answer").addEventListener("click", () => {
+        }
+        function answer(){
             location.href = "tres.html" + "?" + scores;
-        })
+        }
     </script>
 </body>
 </html>

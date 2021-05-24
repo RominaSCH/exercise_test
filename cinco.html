@@ -15,35 +15,32 @@
         <div class="question_bottom">
             <div class="question-title">거북목, 척추측만증, 짝다리.. 갖고 계신가요?</div>
             <div class="question-answers">
-                <div class="answer">바른자세 바른몸, 하나도 해당되지 않는다.</div>
-                <div class="answer">측정을 받아보지 못했어요.</div>
-                <div class="answer correct">1~2개정도 있어요</div>
-                <div class="answer correctMore">다 가지고 있다</div>
+                <div class="answer" onclick="answer()">바른자세 바른몸, 하나도 해당되지 않는다.</div>
+                <div class="answer" onclick="correct()">측정을 받아보지 못했어요.</div>
+                <div class="answer" onclick="correct()">1~2개정도 있어요.</div>
+                <div class="answer" onclick="correctMore()">다 가지고 있다. 교정이 절실하다.</div>
             </div>
         </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
     <script>
         temp = location.href.split("?");
         let scores = temp[1].split(",");
         scores.map( (element, index) => {
             scores[index] = parseInt(element);
         });
-        $(".correct").click(function(){
+
+        function correct(){
             scores[4] += 1;
             location.href = "seis.html" + "?" + scores;
-        })
-        $(".correctMore").click(function(){
+        }
+        function correctMore(){
             scores[4] += 2;
             location.href = "seis.html" + "?" + scores;
-        })
-        $(".answer").click(function(){
+        }
+        function answer(){
             location.href = "seis.html" + "?" + scores;
-        })
+        }
+
     </script>
 </body>
 </html>
