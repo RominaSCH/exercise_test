@@ -136,3 +136,12 @@ if (scores[0] >= 0) {
     }
   }
 }
+
+function copy() {
+  const create = document.createElement("input");
+  create.setAttribute("value", "https://rominasch.github.io/exercise_test/");
+  document.body.appendChild(create);
+  create.select();
+  document.execCommand("copy");
+  document.body.removeChild(create);
+}

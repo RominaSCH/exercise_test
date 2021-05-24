@@ -15,7 +15,7 @@ body{
 }
 .wrapper{
     margin-top: 50px;
-    width: 430px;
+    width: 380px;
     height: 700px;
     padding: 30px;
     display: flex;
@@ -24,16 +24,31 @@ body{
     align-items: center;
     border-radius: 10px;
     box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.45);
+    position: relative;
+}
+.progress-wrapper{
+    width: 90%;
+    position: absolute;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #000;
+}
+.progress{
+    font-size: 13px;
 }
 .result{
     text-align: center;
 }
 .result-first{
-    font-size: 18px;
-    margin-bottom: 5px;
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: 700;
 }
 #result-img{
-    width: 370px;
+    margin: 40px 0 10px 0;
+    width: 330px;
     height: auto;
     border-radius: 10px;
 }
@@ -42,4 +57,33 @@ body{
     font-size: 27px;
     text-align: center;
     font-weight: 900;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goto, .share{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 14px 10px 14px;
+    background-color: gold;
+    border-radius: 20px;
+    transition: .15s ease-in-out;
+    margin-top: 50px;
+}
+.goto:hover,
+.goto:active,
+.goto:focus{
+    background-color: steelblue;
+    color: #fff;
+}
+.share{
+    margin-right: 30px;
+}
+.share:hover,
+.share:active,
+.share:focus{
+    background-color: seagreen;
+    color: #fff;
 }
