@@ -4,11 +4,11 @@ scores.map((element, index) => {
   scores[index] = parseInt(element);
 });
 
-if (scores[0] >= 0) {
+if (scores[0] > 0) {
   //의지력 O
-  if (scores[1] >= 0) {
+  if (scores[1] > 0) {
     //같이같이
-    if (scores[2] >= 0) {
+    if (scores[2] > 0) {
       //밖이좋아
       if (scores[3] > 0) {
         //money 많아
@@ -17,9 +17,9 @@ if (scores[0] >= 0) {
         document.querySelector(".result-text").innerHTML = "야외에서 상대방과 같이 할 수 있는 <br/>테니스를 추천합니다!";
       } else {
         //money 적어
-        document.querySelector(".result-title").innerHTML = "배드민턴";
-        document.querySelector("#result-img").src = "https://images.unsplash.com/photo-1613921303354-63cdae352a9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80";
-        document.querySelector(".result-text").innerHTML = "가볍게 즐길 수 있는 배드민턴을 추천합니다!<p>장비를 갖추기도 쉽고 <br/>운동 방법도 어렵지 않습니다.</p>"
+        document.querySelector(".result-title").innerHTML = "롱보드";
+        document.querySelector("#result-img").src = "https://images.unsplash.com/photo-1558388553-194c5323b58d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1387&q=80";
+        document.querySelector(".result-text").innerHTML = "롱보드를 추천합니다!<br/>동호회에 들어가서 배우는 것도 좋고,<br/>유튜브를 통해 배우는 것도 괜찮습니다.<br/>주행하고 나면 스킬도 배워보면서 <br/>짜릿함을 즐겨보세요<br/><br/>롱보드 외에도 인라인, <br/>프리라인 스케이트 등도 추천해요. ";
       }
     } else {
       //안이좋아
@@ -37,7 +37,7 @@ if (scores[0] >= 0) {
     }
   } else {
     //혼자가 좋아
-    if (scores[2] >= 0) {
+    if (scores[2] > 0) {
       //밖이좋아
       if (scores[3] > 0) {
         //money 많아
@@ -67,9 +67,9 @@ if (scores[0] >= 0) {
   }
 } else {
   //의지력 X
-  if (scores[1] >= 0) {
+  if (scores[1] > 0) {
     //같이같이
-    if (scores[2] >= 0) {
+    if (scores[2] > 0) {
       //밖이좋아
       if (scores[3] > 0) {
         //money 많아
@@ -87,19 +87,19 @@ if (scores[0] >= 0) {
       //안이좋아
       if (scores[3] > 0) {
         //money 많아
-        document.querySelector(".result-title").innerHTML = "스쿼시";
-        document.querySelector("#result-img").src = "https://images.unsplash.com/photo-1554290813-ec6a2a72e5c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80";
-        document.querySelector(".result-text").innerHTML = "빠르게 튀어오르는 공, <br/>끼릭거리는 신발 마찰음, <br/>공을 쫓아 랠리를 이어가보세요. <br/>작은 공간에서 펼쳐지는 <br/>긴장감 넘치는 스포츠입니다.";
-      } else {
-        //money 적어
         document.querySelector(".result-title").innerHTML = "댄스스포츠";
         document.querySelector("#result-img").src = "https://images.unsplash.com/photo-1575449235878-6de79c4c8ef4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80";
         document.querySelector(".result-text").innerHTML = "리듬에 맞춰 서로의 호흡을 맞춰나가는 <br/>댄스스포츠 어떠세요?"
+      } else {
+        //money 적어
+        document.querySelector(".result-title").innerHTML = "복싱";
+        document.querySelector("#result-img").src = "https://images.unsplash.com/photo-1517438322307-e67111335449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1351&q=80";
+        document.querySelector(".result-text").innerHTML = "기초체력부터 키워주는 복싱을 추천합니다.<br/>스파링, 바로 하지 않아요! 겁먹지 마세요.<br/>줄넘기, 스텝부터 차근차근 배워나갑니다."
       }
     }
   } else {
     //혼자가 좋아
-    if (scores[2] >= 0) {
+    if (scores[2] > 0) {
       //밖이좋아
       if (scores[3] > 0) {
         //money 많아
@@ -109,9 +109,9 @@ if (scores[0] >= 0) {
         
       } else {
         //money 적어
-        document.querySelector(".result-title").innerHTML = "동호회";
+        document.querySelector(".result-title").innerHTML = "자전거";
         document.querySelector("#result-img").src = "https://images.unsplash.com/photo-1576858574144-9ae1ebcf5ae5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80";
-        document.querySelector(".result-text").innerHTML = "운동을 오래하려면 <br/>누군가와 같이 하는 것도 좋습니다. <br/>운동 모임에 가입해보세요.</p>";
+        document.querySelector(".result-text").innerHTML = "시원한 바람을 느끼며 달려보세요. <br/>요새는 자전거 도로가 잘 되어있어서<br/>자전거 한 대만 있으면 어디든 다닐 수 있습니다.<br/>자전거 동호회에 가입해 사람들과<br/>같이 달려보는 것도 좋습니다.";
       }
     } else {
       //안이좋아
@@ -136,11 +136,12 @@ if (scores[0] >= 0) {
     }
   }
 }
+
 const modal = document.querySelector(".modal");
 
 function copy() {
   const create = document.createElement("input");
-  create.setAttribute("value", "https://rominasch.github.io/exercise_test/");
+  create.setAttribute("value", window.document.location.href );
   document.body.appendChild(create);
   create.select();
   document.execCommand("copy");
@@ -148,3 +149,4 @@ function copy() {
   modal.classList.remove("hidden");
   setTimeout( () => {modal.classList.add("hidden")}, 1000);
 }
+
