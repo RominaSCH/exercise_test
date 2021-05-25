@@ -10,28 +10,19 @@
 <body>
     <div class="wrapper">
         <div class="progress-wrapper">
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
+            <div class="progress-bar"> </div>
+            <div class="progress-gauge gauge2"> </div>
         </div>
         <div class="question_bottom">
             <div class="question-title">운동을 하는 목적이 뭐에요?</div>
             <div class="question-answers">
-                <div class="answer" onclick="answer()">건강을 위해서</div>
-                <div class="answer" onclick="correct()">몸을 교정하고 싶어요</div>
+                <div class="answer" onclick="answer()">건강해지고 싶어요<span class="small-text">(체력, 근력, 체중조절)</span></div>
+                <div class="answer" onclick="correct()">체형교정이 필요해요</div>
                 <div class="answer" onclick="answer()">다이어트를 하고 싶어요</div>
                 <div class="answer" onclick="answer()">멋진 몸을 만들고 싶어요</div>
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/6c2f90a09b.js" crossorigin="anonymous"></script>
     <script>
         temp = location.href.split("?");
         let scores = temp[1].split(",");

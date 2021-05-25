@@ -10,33 +10,29 @@
 <body>
     <div class="wrapper">
         <div class="progress-wrapper">
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
+            <div class="progress-bar"> </div>
+            <div class="progress-gauge gauge7"> </div>
         </div>
         <div class="question_bottom">
             <div class="question-title">운동에 시간을 얼마나 투자할 수 있나요?</div>
             <div class="question-answers">
-                <div class="answer" onclick="timeDown()">일주일에 2번 1시간정도 할애할 수 있다</div>
-                <div class="answer" onclick="answer()">일주일에 3번 1시간정도 할애할 수 있다</div>
-                <div class="answer" onclick="timeUp()">일주일에 3번 이상 2시간 넘게 할애할 수 있다</div>
+                <div class="answer" onclick="willDown()">일주일에 하루정도</div>
+                <div class="answer" onclick="timeDown()">일주일에 2번 1시간정도</div>
+                <div class="answer" onclick="answer()">일주일에 3번 1시간정도</div>
+                <div class="answer" onclick="timeUp()">일주일에 3번 이상 2시간 넘게</div>
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/6c2f90a09b.js" crossorigin="anonymous"></script>
     <script>
         temp = location.href.split("?");
         let scores = temp[1].split(",");
         scores.map( (element, index) => {
             scores[index] = parseInt(element);
         });
+        function willDown(){
+            scores[0] -= 1;
+            location.href = "ocho.html" + "?" + scores;
+        }
         function timeDown(){
             scores[5] -= 1;
             location.href = "ocho.html" + "?" + scores;

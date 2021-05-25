@@ -10,28 +10,20 @@
 <body>
     <div class="wrapper">
         <div class="progress-wrapper">
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
+            <div class="progress-bar"> </div>
+            <div class="progress-gauge gauge5"> </div>
         </div>
         <div class="question_bottom">
-            <div class="question-title">거북목, 척추측만증, 짝다리.. 갖고 계신가요?</div>
+            <div class="question-title">거북목, 척추측만증, 짝다리 등의 <br/> 체형교정이 필요하신가요?</div>
             <div class="question-answers">
-                <div class="answer" onclick="answer()">바른자세 바른몸, 하나도 해당되지 않는다.</div>
-                <div class="answer" onclick="correct()">측정을 받아보지 못했어요.</div>
-                <div class="answer" onclick="correct()">1~2개정도 있어요.</div>
-                <div class="answer" onclick="correctMore()">다 가지고 있다. 교정이 절실하다.</div>
+                <div class="answer" onclick="correct()">모르겠어요, <br/>측정을 받아보지 못했어요</div>
+                <div class="answer" onclick="answer()">바른자세 바른몸, <br/>하나도 해당하지 않는다</div>
+                <div class="answer" onclick="correct()">1~2개정도 있어요</div>
+                <div class="answer" onclick="correctMore()">3개 이상 가지고 있어요, 절실해요</div>
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/6c2f90a09b.js" crossorigin="anonymous"></script>
+    
     <script>
         temp = location.href.split("?");
         let scores = temp[1].split(",");

@@ -10,28 +10,19 @@
 <body>
     <div class="wrapper">
         <div class="progress-wrapper">
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
+            <div class="progress-bar"> </div>
+            <div class="progress-gauge gauge4"> </div>
         </div>
         <div class="question_bottom">
             <div class="question-title">나는 혼자서도 잘한다?</div>
             <div class="question-answers">
-                <div class="answer" onclick="willDown()">잘 못한다. 누가 시켜야만 하는 스타일</div>
-                <div class="answer" onclick="willUp()">계획만 짜여져 있으면 잘 할 자신 있다</div>
-                <div class="answer" onclick="willDown()">스스로 계획은 잘 짜는데 잘 안하게 된다</div>
-                <div class="answer" onclick="willUp()">스스로 계획부터 실행까지 가능하다</div>
+                <div class="answer" onclick="willDown()">누가 시켜야만 하게 된다</div>
+                <div class="answer" onclick="willUp()">계획만 짜주면 잘 할 수 있다</div>
+                <div class="answer" onclick="willDown()">스스로 계획은 잘 짜는데<br/>잘 안하게 된다</div>
+                <div class="answer" onclick="willUp()">스스로 계획부터 실행까지 잘 한다</div>
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/6c2f90a09b.js" crossorigin="anonymous"></script>
     <script>
         temp = location.href.split("?");
         let scores = temp[1].split(",");

@@ -17,7 +17,7 @@ body{
     background: linear-gradient(#4ca2cd,#67B26F);
 }
 .home-wrapper{
-    width: 380px;
+    width: 360px;
     height: auto;
     padding: 30px;
     display: flex;
@@ -28,7 +28,7 @@ body{
     background-color: #fff;
 }
 .home_image{
-    width: 340px;
+    width: 320px;
     height: auto;
 }
 .home_image img{
@@ -46,14 +46,15 @@ body{
     margin-bottom: 10px;
 }
 .homt_start-text{
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 30px;
 }
 .home_start-btn{
+    font-weight: 700;
     background-color: silver;
     color: #fff;
-    padding: 7px 30px 10px 30px;
-    font-size: 25px;
+    padding: 10px 22px;
+    font-size: 22px;
     border-radius: 25px;
     transition: .15s ease-in-out;
 }

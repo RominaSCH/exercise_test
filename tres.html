@@ -10,27 +10,18 @@
 <body>
     <div class="wrapper">
         <div class="progress-wrapper">
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
+            <div class="progress-bar"> </div>
+            <div class="progress-gauge gauge3"> </div>
         </div>
         <div class="question_bottom">
-            <div class="question-title">운동을 위해 얼마나 쓸 수 있어요?(/월)</div>
+            <div class="question-title">운동을 위해<br/>얼마나 쓸 수 있어요?(월단위)</div>
             <div class="question-answers">
-                <div class="answer" onclick="moneyDown()">5만원 미만</div>
-                <div class="answer" onclick="answer()">20만원 미만</div>
-                <div class="answer" onclick="moneyUp()">20만원 이상</div>
+                <div class="answer" onclick="moneyDown()">10만원 미만/월</div>
+                <div class="answer" onclick="answer()">30만원 미만/월</div>
+                <div class="answer" onclick="moneyUp()">30만원 이상/월</div>
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/6c2f90a09b.js" crossorigin="anonymous"></script>
     <script>
         temp = location.href.split("?");
         let scores = temp[1].split(",");

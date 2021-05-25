@@ -3,7 +3,8 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Malgun Gothic';
 }
 a, a:visited{
     color: #000;
@@ -18,7 +19,7 @@ body{
     background: linear-gradient(#4ca2cd,#67B26F);
 }
 .wrapper{
-    width: 380px;
+    width: 360px;
     height: auto;
     padding: 30px;
     display: flex;
@@ -30,16 +31,58 @@ body{
     position: relative;
 }
 .progress-wrapper{
-    width: 90%;
+    width: 80%;
+    height: 12px;
     position: absolute;
     top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #000;
 }
-.progress{
-    font-size: 13px;
+.progress-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: rgba(200,200,200,.7);
+}
+.progress-gauge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4ca2cd;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+.gauge1{
+    width: 5%;
+}
+.gauge2{
+    width: 15%;
+}
+.gauge3{
+    width: 25%;
+}
+.gauge4{
+    width: 35%;
+}
+.gauge5{
+    width: 45%;
+}
+.gauge6{
+    width: 55%;
+}
+.gauge7{
+    width: 65%;
+}
+.gauge8{
+    width: 75%;
+}
+.gauge9{
+    width: 85%;
+}
+.gauge10{
+    width: 95%;
 }
 
 .question_bottom{
@@ -54,7 +97,7 @@ body{
     margin: 60px 0 150px;
 }
 .question-answers{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 300;
 }
 .answer{
@@ -72,4 +115,7 @@ body{
 .answer:active{
     background: #5BAB9D;
     color: #fff;
+}
+.small-text{
+    font-size: 13px;
 }

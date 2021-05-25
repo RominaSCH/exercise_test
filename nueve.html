@@ -10,28 +10,19 @@
 <body>
     <div class="wrapper">
         <div class="progress-wrapper">
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="fas fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
-            <div class="progress"><i class="far fa-circle"></i></div>
+            <div class="progress-bar"> </div>
+            <div class="progress-gauge gauge9"> </div>
         </div>
         <div class="question_bottom">
             <div class="question-title">난 몸치다? 아니다?</div>
             <div class="question-answers">
                 <div class="answer" onclick="answer()">몸치다</div>
+                <div class="answer" onclick="willUp()">몸치지만 노력하겠다</div>
                 <div class="answer" onclick="answer()">평범하다</div>
-                <div class="answer" onclick="willUp()">몸치지만 노력한다면 극복할 수 있다고 생각한다</div>
                 <div class="answer" onclick="outside()">몸쓰는 건 자신있다</div>
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/6c2f90a09b.js" crossorigin="anonymous"></script>
     <script>
         temp = location.href.split("?");
         let scores = temp[1].split(",");
