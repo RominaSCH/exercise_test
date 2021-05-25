@@ -55,7 +55,7 @@ if (scores[0] > 0) {
       if (scores[3] > 0) {
         //money 많아
         document.querySelector(".result-title").innerHTML = "링피트";
-        document.querySelector("#result-img").src = "/image/poongfit.JPG";
+        document.querySelector("#result-img").src = "https://i.ytimg.com/vi/3qz6Q7JZCYg/maxresdefault.jpg";
         document.querySelector(".result-text").innerHTML = "운동게임 링피트를 추천합니다.<br/>별 것 아닌 듯 하지만 <br/>매일 하기가 쉽지 않아요.<br/>게임하면서 즐겁게 운동할 수 있으니까 <br/>쉽게 질리지 않아요.<br/><br/>스위치만 있다면 저스트댄스, 복싱등<br/>다른 것도 가능합니다.";
       } else {
         //money 적어
