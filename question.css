@@ -10,21 +10,23 @@ a, a:visited{
     text-decoration: none;
 }
 body{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(#4ca2cd,#67B26F);
 }
 .wrapper{
-    margin-top: 50px;
     width: 380px;
-    height: 650px;
+    height: auto;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.45);
+    background-color: #fff;
     position: relative;
 }
 .progress-wrapper{
@@ -68,6 +70,6 @@ body{
 .answer:hover,
 .answer:focus,
 .answer:active{
-    background-color: tomato;
+    background: #5BAB9D;
     color: #fff;
 }
