@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700;900&display=swap');
+@font-face{
+    font-family: "nanumB";
+    src: url(./NanumBarunpenB.ttf);
+}
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    /* font-family: 'Noto Sans KR', sans-serif; */
-    font-family: 'Malgun Gothic';
+    font-family: "nanumB";
 }
 a, a:visited{
     color: #000;
@@ -86,18 +88,17 @@ body{
 }
 
 .question_bottom{
-    font-size: 28px;
     width: 100%;
 }
 .question-title{
     text-align: center;
     padding-left: 5px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
-    margin: 60px 0 150px;
+    margin: 100px 0 100px;
 }
 .question-answers{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
 }
 .answer{
