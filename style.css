@@ -1,8 +1,13 @@
+@font-face{
+    font-family: "nanumB";
+    src: url(./NanumBarunpenB.ttf);
+}
+
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "nanumB";
 }
 a, a:visited{
     color: #000;
@@ -41,12 +46,12 @@ body{
     margin-top: 20px;
 }
 .home_start-title{
-    font-weight: 900;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 33px;
     margin-bottom: 10px;
 }
 .homt_start-text{
-    font-size: 17px;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 .home_start-btn{

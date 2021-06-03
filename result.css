@@ -1,8 +1,13 @@
+@font-face{
+    font-family: "nanumB";
+    src: url(./NanumBarunpenB.ttf);
+}
+
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "nanumB";
 }
 a, a:visited{
     color: #000;
@@ -33,7 +38,7 @@ body{
 }
 .result-first{
     margin-top: 25px;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 700;
 }
 #result-img{
@@ -44,9 +49,12 @@ body{
 }
 .result-title{
     margin: 15px 0;
-    font-size: 27px;
+    font-size: 34px;
     text-align: center;
     font-weight: 900;
+}
+.result-text{
+    font-size: 18px;
 }
 .buttons{
     display: flex;
@@ -55,7 +63,7 @@ body{
     position: relative;
 }
 .goto, .share{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     padding: 10px 14px 10px 14px;
     background-color: silver;
@@ -96,7 +104,7 @@ body{
     border-radius: 15px;
 }
 .modal_content span{
-    font-size: 13px;
+    font-size: 18px;
     color: #fff;
     margin: 0;
 }
